@@ -1,0 +1,10 @@
+﻿{
+    "name": "Testing",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+        "watch": "fable-splitter Testing.fsproj --outDir out --watch",
+        "build": "fable-splitter Testing.fsproj --outDir out"
+    }
+}

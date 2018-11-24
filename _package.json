@@ -1,0 +1,10 @@
+{
+    "name": "<%= $PLASTER_PARAM_Name -replace " ", "_" %>",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+        "watch": "fable-splitter <%= $PLASTER_PARAM_Name -replace " ", "_" %>.fsproj --outDir out --watch",
+        "build": "fable-splitter <%= $PLASTER_PARAM_Name -replace " ", "_" %>.fsproj --outDir out"
+    }
+}
