@@ -1,15 +1,14 @@
 <Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
-        <TargetFramework>
-            <%= $PLASTER_PARAM_TargetFramework %></TargetFramework>
-</PropertyGroup>
+        <TargetFramework><%= $PLASTER_PARAM_TargetFramework %></TargetFramework>
+    </PropertyGroup>
 
-<ItemGroup>
-<Compile Include="Library.fs" />
-        </ItemGroup>
+    <ItemGroup>
+        <Compile Include="Library.fs" />
+    </ItemGroup>
 
-        <ItemGroup>
-            <PackageReference Include="Fable.Core" Version="<%= $PLASTER_PARAM_FableVersion %>" />
-            <DotNetCliToolReference Include="dotnet-fable" Version="<%= $PLASTER_PARAM_FableToolsVersion %>" />
-        </ItemGroup>
-    </Project>
+    <ItemGroup>
+        <PackageReference Include="Fable.Core" Version="<%= $PLASTER_PARAM_FableVersion %>" />
+        <DotNetCliToolReference Include="dotnet-fable" Version="<%= $PLASTER_PARAM_FableToolsVersion %>" />
+    </ItemGroup>
+</Project>

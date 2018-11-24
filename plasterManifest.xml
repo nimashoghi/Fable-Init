@@ -30,8 +30,10 @@
 
     <templateFile source="_Library.fs" destination="Library.fs" />
 
-    <templateFile source="_psakefile.ps1" destination="psakefile.ps1" />
+    <file source="_psakefile.ps1" destination="psakefile.ps1" />
 
     <templateFile source="_FinalizeSetup.ps1" destination="FinalizeSetup.ps1" />
+
+    <message>Run FinalizeSetup.ps1 to finialize your setup.</message>
   </content>
 </plasterManifest>
